@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,16 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".ui.main.MainActivity">
         <!--android:padding="16dp"-->
 
         <TextView
             style="@style/label_titulo_padding"
             android:text="@string/label_dado_cliente" />
 
-        <EditText
+        <!--android:hint="@string/edit_nome_cliente"-->
+        <TextView
+            android:id="@+id/tvNome"
             style="@style/label_titulo"
-            android:hint="@string/edit_nome_cliente" />
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            tools:text="Fulano da Silva"/>
 
         <TextView
             style="@style/label_titulo_padding"
